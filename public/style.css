@@ -42,4 +42,25 @@ header {
     height: 500px;
     width: 900px;
     margin: 20px auto;
+    
+}
+
+.books {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
+    height: 5px;
+}
+
+.book {
+    height: 20px;
+    width: 300px;
+    position: absolute;
+    
+}
+
+.book img {
+    height: 150px;
+    width: 100px;
 }
