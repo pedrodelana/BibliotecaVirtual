@@ -24,4 +24,10 @@ class HomeController extends Controller
         $book->delete();
         $book->update();
     }
+
+    public function admin()
+    {
+        $books = Book::all();
+        return view ('admin', compact('books'));
+    }
 }

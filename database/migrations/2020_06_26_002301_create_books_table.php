@@ -18,7 +18,7 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->string("title", 255)->unique();
             $table->string("subtitle", 355);
-            $table->string("img", 355);
+            $table->string("img", 355)->nullable();
             $table->timestamps();
         });
 

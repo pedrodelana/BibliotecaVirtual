@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(138, 136, 136);
+    /* background-color: rgb(138, 136, 136); */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,9 +21,10 @@ header {
 
 .links  {
     width: 100%;
-    text-align: left;
-    position: absolute;
-    margin-top: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+   
 }
 
 .links img{
@@ -31,11 +32,15 @@ header {
     
 }
 
+.links .adminlink {
+    right: 10px;
+}
+
 .links a:hover {
     color: rgb(173, 2, 2);
 }
 
-.main {
+.bg-secondary {
     border-radius: 20px;    
 }
 
@@ -44,8 +49,13 @@ header {
 }
 
 .book {
-    margin: 10px auto;
+    padding: 5px;
     text-align: center;
+    
+}
+
+.book .bg-secondary{
+    padding: 5px 0px;
 }
 
 .book img {
@@ -58,4 +68,35 @@ header {
 
 .space {
     height: 2rem;
+}
+
+.adicionar a{
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.adicionar a:hover{
+    color: white;
+}
+
+.deledit button{
+  
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    font-weight: bolder;    
+}
+
+.deledit form{
+display: inline-block;
+}
+
+.deledit {
+    padding-top: 5px;
+}
+
+.deledit a:hover{
+    color: white;
 }
