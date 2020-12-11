@@ -20,28 +20,49 @@ header {
 }
 
 .links  {
-    width: 100%;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-   
+    display: inline;    
 }
 
 .links img{
-    height: 40px;
-    
+    height: 50px;
+}
+
+.links .logo{
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .links .adminlink {
     right: 10px;
+    position: absolute;
+    color: white;
+    bottom: 0px;
 }
 
+
 .links a:hover {
-    color: rgb(173, 2, 2);
+    color: rgb(55, 186, 247);
+}
+
+.editmain {
+display: inline-block;
+
+}
+
+.editrow {
+    overflow: hidden;
+    width: 0 auto;
 }
 
 .bg-secondary {
     border-radius: 20px;    
+}
+
+.bookheight {
+    height: 50vh;    
+    overflow-y: auto;
+    
 }
 
 .books {
@@ -56,6 +77,10 @@ header {
 
 .book .bg-secondary{
     padding: 5px 0px;
+}
+
+.book .bg-secondary p{
+    padding: 0px 10px;
 }
 
 .book img {

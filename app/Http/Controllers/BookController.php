@@ -43,6 +43,8 @@ class BookController extends Controller
             "subtitle" => $request->input("subtitle"),
             "img" => $request->file("img")->hashName()
         ]);
+
+        return redirect('admin');
     }
 
     /**
@@ -85,6 +87,8 @@ class BookController extends Controller
             "subtitle" => $request->input("subtitle"),
             "img" => $request->file("img")->hashName()
         ]);
+
+        return redirect('admin');
     }
 
     /**
@@ -97,5 +101,7 @@ class BookController extends Controller
     {
         $book= Book::findOrFail($id);
         $book->delete();
+
+        return redirect('/admin');
     }
 }
