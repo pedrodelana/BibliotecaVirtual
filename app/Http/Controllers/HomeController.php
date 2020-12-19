@@ -30,4 +30,10 @@ class HomeController extends Controller
         $books = Book::all();
         return view ('admin', compact('books'));
     }
+
+    public function userlogin()
+    {
+
+        return view ('login');
+    }
 }

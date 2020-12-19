@@ -4,9 +4,9 @@
     
 @section('section')
 
-<div class="container editmain mx-4 d-block">
-    <div class="row editrow">
-        <form action="/books/update/{{$book->id}}" method="POST" enctype="multipart/form-data">
+<div class="container">
+    <div class="row">
+        <form class="editrow" action="/books/update/{{$book->id}}" name="edit" method="POST" enctype="multipart/form-data">
             {!! csrf_field() !!}
         <div class="form-group">
             <label for="exampleFormControlInput1">Nome do livro</label>
@@ -18,10 +18,11 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlFile1">Inserir imagem do livro</label>
-            <input type="file" value="{{$book->img}}" class="form-control-file" id="imageBook" name="img">
+            <input type="file" value="http://127.0.0.1:8888/storage/images/{{$book->img}}" class="form-control-file" id="imageBook" name="img">
             </div>  
-            <button type="submit" class="btn btn-primary">Salvar</button>   
-        </form>    
+            <button type="submit" class="btn btn-success">Salvar</button>   
+        </form>   
+
     </div>
 </div>
 @endsection

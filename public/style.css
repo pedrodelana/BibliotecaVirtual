@@ -8,19 +8,21 @@
 }
 
 body {
-    /* background-color: rgb(138, 136, 136); */
+    /* background-color: rgb(138, 136, 136); */    
     font-family: 'Roboto', sans-serif;
+
 }
 
 header {
-    background-color: rgb(105, 104, 104);
+    background-color: rgb(42, 167, 224);
     width: 100%;
     height: 50px;       
     position: relative;
 }
 
 .links  {
-    display: inline;    
+    display: inline;   
+    text-decoration: none; 
 }
 
 .links img{
@@ -29,8 +31,7 @@ header {
 
 .links .logo{
     position: absolute;
-    text-align: center;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .links .adminlink {
@@ -42,27 +43,34 @@ header {
 
 
 .links a:hover {
-    color: rgb(55, 186, 247);
-}
-
-.editmain {
-display: inline-block;
-
+    color: rgb(236, 236, 26);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .editrow {
-    overflow: hidden;
-    width: 0 auto;
+    display: block;
+    width: 50%;
+    margin: auto;
 }
 
-.bg-secondary {
-    border-radius: 20px;    
+.editrowlogin {
+    display: block;
+    width: 30%;
+    margin: auto;
+    background-color: rgb(42, 167, 224);
+    padding: 2em;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .bookheight {
     height: 50vh;    
     overflow-y: auto;
-    
+    background-color: rgb(55, 186, 247);
+    border-radius: 20px;
+    padding: 0.5em;
 }
 
 .books {
@@ -70,6 +78,7 @@ display: inline-block;
 }
 
 .book {
+    color: white;
     padding: 5px;
     text-align: center;
     

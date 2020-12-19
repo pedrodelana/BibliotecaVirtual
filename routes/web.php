@@ -19,4 +19,4 @@ Route::post('/books', 'BookController@store');
 Route::post('/books/delete/{id}', 'BookController@destroy');
 Route::get('/books/edit/{id}', 'BookController@edit');
 Route::post('/books/update/{id}', 'BookController@update');
-
+Route::get('/login', 'HomeController@userlogin');

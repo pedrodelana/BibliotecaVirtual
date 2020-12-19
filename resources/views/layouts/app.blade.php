@@ -13,9 +13,9 @@
 
                 <div class="links">
                     <a href="/" class="logo text-center">
-                        <img src="/img/bv_logo_completa.png" alt="">
+                        <img src="/img/bv_logo_completa_white.png" alt="">
                     </a>
-                    <a href="/admin" class="adminlink">Modo Administrador</a>
+                    <a href="/login" class="adminlink">Login</a>
                 </div>
 
     </header>
@@ -51,7 +51,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="submit" class="btn btn-primary">Salvar alterações</button>
+          <button type="submit" class="btn btn-success">Salvar alterações</button>
         </div>
         </form>
       </div>

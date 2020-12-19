@@ -14,7 +14,7 @@
     <div class="row">
         @foreach($books as $book)
             <div class="book col-md-4 ">
-                <div class="bg-secondary bookheight">
+                <div class="bookheight">
                     <img src="{{ asset("storage/images") . "/" . $book['img']}}" alt="">
                     <h3>{{$book['title']}}</h3>
                     <p>{{$book['subtitle']}}</p>
